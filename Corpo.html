@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Bem-vindo ao meu portfólio</h2>
+        <p>Aqui, você encontrará uma amostra do meu trabalho, onde compartilho projetos, experiências e conquistas que refletem minha paixão e dedicação à minha área de atuação. Embora este site apresente apenas algumas imagens selecionadas e um videoclipe, cada elemento foi escolhido cuidadosamente para proporcionar uma visão clara e detalhada das minhas habilidades e do meu crescimento profissional ao longo dos anos.
+
+Navegue pela seleção de projetos, assista ao videoclipe e descubra as minhas competências e realizações. Seja você um potencial cliente, empregador ou apenas alguém interessado no meu trabalho, espero que esta amostra inspire confiança e mostre a qualidade e o compromisso que trago para cada projeto.
+
+Obrigado por visitar e sinta-se à vontade para entrar em contato se tiver qualquer dúvida ou se desejar colaborar comigo em futuros projetos.
+
+Com os melhores cumprimentos,
+
+Pedro Arcanjo.</p>
+    </section>
+    <section id="videos">
+        <h2>Vídeos</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="clipe01.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </section>
+    <section id="fotos">
+        <script src="função.js"></script>
+        <h2>Fotos</h2>
+        <div class="gallery">
+            <img src="Wallpaper gaivota.jpg" alt="Foto de uma gaivota na pedreira" onclick="openModal();currentSlide(1)">
+            <img src="Tatto01.jpg" alt="Tatuadora" onclick="openModal();currentSlide(2)">
+            <img src="Cristo02.jpg" alt="Paisagem com modelo" onclick="openModal();currentSlide(3)">
+        </div>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do email: <a href="mailto:pedrinhoarcanjo08@gmail.com">pedrinhoarcanjo08@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pedro Arcanjo. Todos os direitos reservados.</p>
+        <p> Perdoe a simplicidade do site, programei sozinho. </p>
+          <p> Recomenda-se que abra as fotos em uma nova guia caso queira ve-las cheias.</p>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <img src="Wallpaper gaivota.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="Tatto01.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="Cristo02.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
